@@ -1,0 +1,32 @@
+{
+  "specialize": {
+    "TickCount": 25546,
+    "StartTime": "2025-09-22T22:20:57.828Z",
+    "EndTime": "2025-09-22T22:20:57.921Z"
+  },
+  "oobeSystem": {
+    "TickCount": 33343,
+    "StartTime": "2025-09-22T22:21:01.434Z",
+    "EndTime": "2025-09-22T22:21:06.240Z"
+  },
+  "setupCl": {
+    "StartTime": "2025-09-22T22:20:35.368Z",
+    "EndTime": "2025-09-22T22:20:39.375Z"
+  },
+  "winDeploy": {
+    "StartTime": "2025-09-22T22:20:40.926Z"
+  },
+  "setup": {
+    "StartTime": "2025-09-22T22:20:41.066Z",
+    "EndTime": "2025-09-22T22:20:58.509Z"
+  },
+  "oobeLdr": {
+    "StartTime": "2025-09-22T22:20:58.544Z",
+    "EndTime": "2025-09-22T22:21:00.592Z"
+  },
+  "provisioning": {
+    "TickCount": 30906,
+    "StartTime": "2025-09-22T22:20:35.368Z",
+    "EndTime": "2025-09-22T22:21:03.802Z"
+  }
+}
