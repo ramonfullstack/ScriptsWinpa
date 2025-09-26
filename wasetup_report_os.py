@@ -312,7 +312,9 @@ def build_machine_summary(all_records):
                 duration_ms = tick_count_ms
         
         if duration_ms is not None:
-            machines[machine][section] = round(duration_ms, 3)
+            # Converte para segundos para melhor visualização
+            duration_seconds = round(duration_ms / 1000.0, 3)
+            machines[machine][section] = duration_seconds
     
     # Cria lista de resultados
     summary_data = []
@@ -323,14 +325,14 @@ def build_machine_summary(all_records):
     for machine_name, sections in machines.items():
         row = {"Machine": machine_name}
         
-        total_ms = 0
+        total_seconds = 0
         for section in section_columns:
             value = sections.get(section)
             row[section] = value  # Remove o sufixo "_ms"
             if value is not None:
-                total_ms += value
+                total_seconds += value
         
-        row["Total"] = round(total_ms, 3) if total_ms > 0 else None  # Remove o sufixo "_ms"
+        row["Total"] = round(total_seconds, 3) if total_seconds > 0 else None  # Remove o sufixo "_ms"
         summary_data.append(row)
     
     return pd.DataFrame(summary_data)
